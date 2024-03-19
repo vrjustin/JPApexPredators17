@@ -11,6 +11,7 @@
 		1AB59A622BAA0E1A008D5A5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB59A612BAA0E1A008D5A5E /* ContentView.swift */; };
 		1AB59A642BAA0E1B008D5A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB59A632BAA0E1B008D5A5E /* Assets.xcassets */; };
 		1AB59A672BAA0E1B008D5A5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB59A662BAA0E1B008D5A5E /* Preview Assets.xcassets */; };
+		1AB59A6E2BAA0E7A008D5A5E /* jpapexpredators.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AB59A6D2BAA0E7A008D5A5E /* jpapexpredators.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1AB59A612BAA0E1A008D5A5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AB59A632BAA0E1B008D5A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AB59A662BAA0E1B008D5A5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AB59A6D2BAA0E7A008D5A5E /* jpapexpredators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jpapexpredators.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				1AB59A5F2BAA0E1A008D5A5E /* JPApexPredators17App.swift */,
 				1AB59A612BAA0E1A008D5A5E /* ContentView.swift */,
 				1AB59A632BAA0E1B008D5A5E /* Assets.xcassets */,
+				1AB59A6D2BAA0E7A008D5A5E /* jpapexpredators.json */,
 				1AB59A652BAA0E1B008D5A5E /* Preview Content */,
 			);
 			path = JPApexPredators17;
@@ -127,6 +130,7 @@
 			files = (
 				1AB59A672BAA0E1B008D5A5E /* Preview Assets.xcassets in Resources */,
 				1AB59A642BAA0E1B008D5A5E /* Assets.xcassets in Resources */,
+				1AB59A6E2BAA0E7A008D5A5E /* jpapexpredators.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
