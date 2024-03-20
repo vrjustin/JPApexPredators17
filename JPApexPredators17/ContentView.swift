@@ -12,13 +12,7 @@ struct ContentView: View {
     @State var searchText = ""
     
     var filteredDinos: [ApexPredator] {
-        if searchText.isEmpty {
-            return predators.apexPredators
-        } else {
-            return predators.apexPredators.filter { predator in
-                predator.name.localizedCaseInsensitiveContains(searchText)
-            }
-        }
+        return predators.search(for: searchText)
     }
     
     var body: some View {
