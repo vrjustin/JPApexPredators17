@@ -10,10 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State var searchText = ""
     @State var alphabetical = false
+    @State var currentMenuTypeSelection = PredatorType.all
     
     let predators = Predators()
     
     var filteredDinos: [ApexPredator] {
+        predators.filter(by: currentMenuTypeSelection)
         predators.sort(by: alphabetical)
         return predators.search(for: searchText)
     }
@@ -66,6 +68,17 @@ struct ContentView: View {
                     } label: {
                         Image(systemName: alphabetical ? "film" : "textformat")
                             .symbolEffect(.bounce, value: alphabetical)
+                    }
+                })
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    Menu {
+                        Picker("Filter", selection: $currentMenuTypeSelection.animation()) {
+                            ForEach(PredatorType.allCases) { type in
+                                Label(type.rawValue.capitalized, systemImage: type.icon)
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "slider.horizontal.3")
                     }
                 })
             }
