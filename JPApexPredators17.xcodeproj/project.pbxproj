@@ -57,10 +57,9 @@
 		1AB59A5E2BAA0E1A008D5A5E /* JPApexPredators17 */ = {
 			isa = PBXGroup;
 			children = (
-				1AB59A5F2BAA0E1A008D5A5E /* JPApexPredators17App.swift */,
+				1AB59A732BAAF0CC008D5A5E /* Models */,
 				1AB59A612BAA0E1A008D5A5E /* ContentView.swift */,
-				1AB59A6F2BAA102C008D5A5E /* ApexPredator.swift */,
-				1AB59A712BAA1332008D5A5E /* Predators.swift */,
+				1AB59A5F2BAA0E1A008D5A5E /* JPApexPredators17App.swift */,
 				1AB59A632BAA0E1B008D5A5E /* Assets.xcassets */,
 				1AB59A6D2BAA0E7A008D5A5E /* jpapexpredators.json */,
 				1AB59A652BAA0E1B008D5A5E /* Preview Content */,
@@ -74,6 +73,15 @@
 				1AB59A662BAA0E1B008D5A5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AB59A732BAAF0CC008D5A5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1AB59A6F2BAA102C008D5A5E /* ApexPredator.swift */,
+				1AB59A712BAA1332008D5A5E /* Predators.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
