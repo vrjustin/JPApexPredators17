@@ -28,15 +28,44 @@ struct PredatorDetailsView: View {
                         .offset(y: 20)
                 }
                 
-                // Name
-                
-                // Current Location
-                
-                // Movies appears in
-                
-                // Movie Moments
-                
-                // link to webpage
+                VStack(alignment: .leading) {
+                    // Name
+                    Text(predator.name)
+                        .font(.largeTitle)
+                    
+                    // Current Location
+                    
+                    // Movies appears in
+                    Text("Appears In:")
+                        .font(.title3)
+                    ForEach(predator.movies, id: \.self) { movie in
+                        Text("•" + movie)
+                            .font(.subheadline)
+                    }
+                    
+                    // Movie Moments
+                    Text("Movie Moments")
+                        .font(.title)
+                        .padding(.top, 15)
+                    ForEach(predator.movieScenes) { scene in
+                        Text(scene.movie)
+                            .font(.title2)
+                            .padding(.vertical, 1)
+                        
+                        Text(scene.sceneDescription)
+                            .padding(.bottom, 15)
+                    }
+                    
+                    // link to webpage
+                    Text("Read More:")
+                        .font(.caption)
+                    Link(predator.link, destination: URL(string: predator.link)!)
+                        .font(.caption)
+                        .foregroundStyle(.blue)
+                }
+                .padding()
+                .padding(.bottom)
+                .frame(width: geoReader.size.width, alignment: .leading)
                 
             }
             .ignoresSafeArea()
